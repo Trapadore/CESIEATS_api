@@ -1,4 +1,4 @@
-FROM node
+FROM node:latest
 
 # Create srv directory
 WORKDIR /srv/api
