@@ -8,10 +8,10 @@ WORKDIR /srv/api
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN sudo chmod -R 777 /srv/api
+RUN chmod -R 777 /srv/api
 RUN npm install
 RUN npm install dotenv
-RUN sudo chmod -R 777 /srv/api
+RUN chmod -R 777 /srv/api
 
 # If you are building your code for production
 # RUN npm install --only=production
